@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Landing Page/03</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26a0aa9c0c.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+            <div class="main" id="bike">
+            <nav>
+                    <img id="logo" src="BMW_bike_img/logo.png" alt="logo">
+                    <a href="#">Home</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About Us</a>
+                    <a href="#" id="btn">Test Drive</a>
+            </nav>
+            <div class="content">
+                <h2>THE DUCATI <i id="icon" class="fa-solid fa-puzzle-piece"></i></h2>
+                <H1>DesertX</H1>
+                <P>Lorem ipsum dolor sit  architecto id sed, eius blanditiis facilis  architecto id sed, eius blanditiis facilis  architecto id sed, architecto id sed, eius blanditiis facilis ratione!</P>
+                <H3>CHOOSE YOUR COLOR</H3>
+            </div>
+            <div  class="color">
+                <div class="red"></div>
+                <div class="blue"></div>
+                <div class="grey"></div>
+            </div>
+            
+        </div>
+        <div id="slogan">Style, Sophistication, Performance. Trust.</div>
+
+        <script>
+            // using Query.Selector to target  classes of elements. 
+            // We can also use getElementById to the IDs of the elements. //
+            
+            let redbtn = document. querySelector(".red");
+            let bluebtn = document.querySelector(".blue");
+            let greybtn = document.querySelector(".grey");
+            let bike = document.getElementById("bike");
+
+
+            //*****************Important Javascript syntax***************//
+
+            redbtn.onclick = function(){
+                bike.style.backgroundImage= "url(BMW_bike_img/BMW1.png)"
+            }
+            bluebtn.onclick = function(){
+                bike.style.backgroundImage= "url(BMW_bike_img/BMW2.png)"
+            }
+            greybtn.onclick = function(){
+                bike.style.backgroundImage= "url(BMW_bike_img/BMW3.png)"
+            }
+
+            //**********************************************************//
+
+
+
+
+        </script>
+    
+</body>
+</html>
